@@ -16,9 +16,8 @@ const Header = () => {
         </div>
 
         <div className="title">Beer-e-wing</div>
-        
-
     </section>
+
         
 )
 }

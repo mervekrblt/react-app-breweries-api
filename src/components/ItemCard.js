@@ -5,8 +5,9 @@ const ItemCard = ({ item }) => {
     // This console.log returns 20 objects (those come from item.js)
     return (
         <div className="card">
-            <p>{ item.name }</p>
-            <h1> { item.street } </h1>
+            <p> { item.name } </p>
+            <p> { item.state } </p>
+            <p> <a href={ item.website_url }> Click here for more information</a> </p>
         </div>
     )
 }

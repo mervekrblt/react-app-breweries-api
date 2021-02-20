@@ -27,6 +27,8 @@ body {
   padding: 2vh;
   width: 60vh;
   height: 50vh;
+  font-size: 5vh;
+  font-weight: 300;
   background: rgba(63, 70, 56, 0.295);
   text-align: center;
   display: flex;
@@ -51,9 +53,13 @@ body {
 }
 
 .title{
-  color: yellow;
+  color: rgb(255, 204, 0);
   font-family: 'Fredericka the Great', cursive;
   font-size: 30vh;
+}
+
+a{
+  color: black;
 }
 
 @media (max-width: 800px) {
