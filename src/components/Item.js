@@ -6,11 +6,10 @@ const Card = ({ items }) => {
     // This console.log returns an array which includes 20 items
     return (
             <section className="items">
-                
+
                 {items.map(item => (
                     <ItemCard item={item} key={item.id}>
                     </ItemCard>
-                    
                 ))}
             </section>
     )

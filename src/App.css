@@ -25,21 +25,28 @@ body {
   margin: 0 auto;
   margin-bottom: 5vh;
   padding: 2vh;
-  border: 2px tomato solid;
   width: 60vh;
   height: 50vh;
-  background: rgb(158, 97, 97, 0.3);
+  background: rgba(63, 70, 56, 0.295);
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  border-radius: 2vh;
+  font-family: 'Fredericka the Great', cursive;
+  transition: .4s
+}
+
+.card:hover{
+  transform: scale(1.1);
+  background-color: rgba(136, 160, 93, 0.3) ;
+  color: rgb(255, 204, 0);
 }
 
 .header{
-  border: firebrick 2px solid;
+  justify-content: center;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   margin-bottom: 10vh;
 }
 
@@ -71,11 +78,9 @@ body {
 
 /*bubbling effect*/
 .bubbles{
-  border: violet 2px solid;
   display: flex;
   margin-top: 20vh;
-  width: 150vh;
-  justify-content: left;
+  margin-bottom: 7vh;
 }
 
 .bubble{
@@ -83,38 +88,38 @@ body {
   animation:short-bubble 1500ms linear infinite;
   -webkit-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
-  height:10px;
-  width:9px;
+  height:20px;
+  width:19px;
   border:1px solid rgba(240,240,240,0.5);
   border-radius:50%;
 }
 
 .b2{
-  -webkit-animation:medium-bubble 5000ms linear infinite;
-  animation:medium-bubble 5000ms linear infinite;
+  -webkit-animation:medium-bubble 8000ms linear infinite;
+  animation:medium-bubble 8000ms linear infinite;
   -webkit-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
   margin-left:-7px;
   margin-top:25px;
-  height:13px;
-  width:12px;
+  height:25px;
+  width:24px;
 }
 
 .b3{
-  -webkit-animation-duration:3500ms;
-  animation-duration:3500ms;
+  -webkit-animation-duration:5500ms;
+  animation-duration:5500ms;
   margin-left:-5px;
   margin-bottom:10px;
 }
 
 .b4{
-  -webkit-animation-duration:2000ms;
-  animation-duration:2000ms;
+  -webkit-animation-duration:4000ms;
+  animation-duration:4000ms;
   -webkit-animation-fill-mode:forwards;
   animation-fill-mode:forwards;
   margin:0 0 40px -9px;
-  height:7px;
-  width:6px;
+  height:20px;
+  width:19px;
 }
 
 .b5{
@@ -124,8 +129,8 @@ body {
   animation-fill-mode:forwards;
   margin-left:-1px;
   margin-top:100px;
-  height:5px;
-  width:4px;
+  height:20px;
+  width:19px;
 }
 
 .b6{
@@ -140,8 +145,8 @@ body {
   animation-duration:6000ms;
   margin-left:-3px;
   margin-bottom:50px;
-  height:7px;
-  width:6px;
+  height:15px;
+  width:14px;
 }
 
 .b8{
