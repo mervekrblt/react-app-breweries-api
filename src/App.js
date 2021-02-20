@@ -27,11 +27,11 @@ const App =() => {
         
           const fetchItems = async () => {
             const result = await axios.get(`https://api.openbrewerydb.org/breweries`)
-            console.log(result.data)
+            //console.log(result.data)
+            //console.log("merve")
             setItems(result.data)
             }
             fetchItems()
-        
       }
 
       //console.log(result.data)
