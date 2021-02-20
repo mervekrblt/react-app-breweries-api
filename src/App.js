@@ -10,18 +10,30 @@ const App =() => {
   const [items, setItems] = useState([])
   const [query, setQuery] = useState("")
 
-  useEffect(() => {
-    const fetchItems = async () => {
-      const result = await axios.get(`https://api.openbrewerydb.org/breweries`)
-      console.log(result.data)
-      setItems(result.data)
-    }
-    fetchItems()
-  }, [])
+  // useEffect(() => {
+  //   const fetchItems = async () => {
+  //     const result = await axios.get(`https://api.openbrewerydb.org/breweries`)
+  //     console.log(result.data)
+  //     setItems(result.data)
+  //     }
+  //     fetchItems()
+  // }, [])
 
   useEffect(() => {
     const fetchItems = async () => {
       const result = await axios.get(`https://api.openbrewerydb.org/breweries/search?query=${query}`)
+
+      if(query === ""){
+        
+          const fetchItems = async () => {
+            const result = await axios.get(`https://api.openbrewerydb.org/breweries`)
+            console.log(result.data)
+            setItems(result.data)
+            }
+            fetchItems()
+        
+      }
+
       //console.log(result.data)
       setItems(result.data)
     }
