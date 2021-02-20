@@ -21,10 +21,6 @@ const App =() => {
     <div className="container">
       <Header/>
       <Item  items={items}/>
-      <Item  items={items}/>
-      <Item  items={items}/>
-      <Item  items={items}/>
-      <Item  items={items}/>
     </div>
   );
 }

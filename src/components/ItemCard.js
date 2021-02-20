@@ -6,6 +6,7 @@ const ItemCard = ({ item }) => {
     return (
         <div className="card">
             <h1 >{ item.name }</h1>
+            <h1> { item.street } </h1>
         </div>
     )
 }
